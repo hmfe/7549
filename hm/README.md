@@ -1,17 +1,20 @@
-##App
+Search App
 
 A search app for stock tickers using the public api https://www.alphavantage.co/documentation/#symbolsearch. The App can
-be used as a standalone or should be easily integrated as a component. I decided to keep it simple and only used a few 3rd party
-frameworks - so no react/vue/jquery or similar. However parts of the solution have sprinkles of React/Marionette/Redux,
-basically I used concepts and ideas I enjoy working with, I very much enjoyed the task (and had a lot of fun fiddling around with it).
+be used as a standalone or be easily integrated as a component. I decided to keep it simple and slim thus only used a few 3rd party
+frameworks - no react/vue/jquery or similar. However parts of the solution has sprinkles of React/Marionette/Redux,
+basically I used concepts and ideas I enjoy working with.
+
+ I very much enjoyed the task (and had a lot of fun fiddling around with it :smile:).
 
 
 The app can be created in the following way:
 ```html
-    <div class="app"></div>
+<div class="app"></div>
 ```
 ```javascript
-  new App('.app');
+import App from './app/App.js';
+new App('.app');
 ```
 
 To get the actions, use:
