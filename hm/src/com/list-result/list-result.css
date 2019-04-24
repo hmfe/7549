@@ -1,0 +1,18 @@
+.search-suggestions {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ccc;
+    margin-top: 1px;
+    position: relative;
+    overflow: scroll;
+    height: 180px;
+}
+
+.list-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

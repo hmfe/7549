@@ -1,0 +1,13 @@
+.result-option {
+    display: inline-block;
+}
+
+.result-option p::first-letter {
+    font-weight: 700;
+    color: #000000;
+}
+
+.result-item:hover {
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
