@@ -61,7 +61,7 @@ class HMComponent {
             this.removeChildren(node);
         }
 
-        domNode.onclick = domNode.oninput = null;
+        domNode.onclick = domNode.oninput = domNode.onkeypress = null;
         domNode.remove();
         return domNode;
     }

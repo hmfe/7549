@@ -20,6 +20,8 @@ const delayCall = (callback, ttw) => {
     }, (!delayTimeoutId ? 200 : ttw));
 };
 
+const ENTER_KEY = 13;
+
 const resetFocus = (searchField, store) => {
     if (store.getState().currentKeyword && !store.getState().selectedItem) {
         searchField.selectionStart = searchField.selectionEnd = searchField.value.length;
@@ -64,6 +66,7 @@ class SearchBox extends HMComponent {
         });
         resetSearchBtn.onclick = (evt) => store.executeAction(actions.RESET_SEARCH_KEY_AND_SEARCH_RESULT);
         searchField.oninput = (evt) => this.onInputChange(evt.currentTarget.value);
+        searchField.onkeypress = (evt) => (evt.keyCode !== ENTER_KEY && this.onInputChange(evt.currentTarget.value));
     }
 
     onInputChange(value) {
