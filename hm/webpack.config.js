@@ -11,7 +11,7 @@ console.log('dev build = '+ devBuild);
 module.exports = (env) => {
   !devBuild && pluginList.push(new MinifyPlugin());
   pluginList.push(new GenerateHtmlPlugin({
-    title: 'Ticker - search app',
+    title: 'Ticker Search App',
     description: 'Test stock ticker search app',
     template: './src/index.html',
     filename: './index.html',
