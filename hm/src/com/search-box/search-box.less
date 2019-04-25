@@ -5,9 +5,11 @@
     }
 
     .search-field {
-        width: 80%;
+        width: 100%;
         border: 1px solid #ccc;
         outline: none;
+        box-sizing: border-box;
+        float: left;
     }
 
     .search-field:focus {
@@ -15,25 +17,32 @@
         box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
     }
 
+    form:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
     .reset-search-btn {
-        border:1px solid transparent;
+        border: 0;
         background-color: transparent;
-        display: inline-block;
-        vertical-align: middle;
         outline: 0;
         cursor: pointer;
+        float: right;
+        top: 0;
+        padding: 0;
     }
 
     .reset-search-btn:after {
         content: "\00d7";
         position: absolute;
         z-index: 1;
-        right: 35px;
+        right: 10px;
         top: 0;
         font-weight: normal;
         font-size: 30px;
         cursor: pointer;
-        line-height: 11px;
+        line-height: 32px;
     }
 
     .search-field:not(:valid) ~ .reset-search-btn {

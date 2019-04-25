@@ -101,7 +101,7 @@ class SearchBox extends HMComponent {
                         data-autocomplete-disabled="false" 
                         aria-label="Search ticker"
                     />
-                    <button class="reset-search-btn" type="reset" aria-label="reset search"></button>                
+                    <button class="reset-search-btn" type="reset" aria-label="reset search"></button>
                     ${ListResult({list: resultList, class: 'search-suggestions', selectedItem: state.selectedItem})}
                 </form>
                 ${state.selectedItem ? ResultBox(state.selectedItem) : ''}
