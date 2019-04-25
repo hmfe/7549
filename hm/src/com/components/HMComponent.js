@@ -9,7 +9,7 @@ class HMComponent {
 
     constructor(el, props) {
         this.el = el;
-        this.id = props.id || {};
+        this.id = (props || {}).id || {};
 
         this.view = this.el && document.querySelector(this.el);
         this.events = (props || {}).events || null;
@@ -44,11 +44,8 @@ class HMComponent {
     }
 
     onDestroy(rootView, domNode) {
-        this.destroy();
+        this.destroy(rootView, domNode);
         this.removeChildren(domNode);
-    }
-
-    destroy() {
     }
 
     removeChildren(domNode) {
@@ -67,6 +64,9 @@ class HMComponent {
         domNode.onclick = domNode.oninput = null;
         domNode.remove();
         return domNode;
+    }
+
+    destroy(rootView, domNode) {
     }
 
     onRendered(rootView, domNode) {

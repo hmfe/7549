@@ -30,7 +30,7 @@
     cursor: pointer;
     line-height: 15px;
 }
-.search-box .search-field:not(:valid) ~ .search-box .reset-search-btn {
+.search-box .search-field:not(:valid) ~ .reset-search-btn {
     display: none;
 }
 .search-box .rounded-top-corners {
