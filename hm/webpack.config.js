@@ -31,7 +31,7 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'build')
     },
     resolve: {
-      extensions: ['.js', '.json', '.css'],
+      extensions: ['.js', '.json', '.css', '.less'],
     },
     plugins: pluginList,
     mode: 'production',
@@ -62,6 +62,25 @@ module.exports = (env) => {
               }
             }
           ]
+        },
+        {
+          test: /\.less$/,
+          use: [
+            {
+              loader: "style-loader"
+            },
+            {
+              loader: "css-loader",
+              options: {
+                sourceMap: true,
+                modules: true,
+                localIdentName: "[local]"
+              }
+            },
+            {
+              loader: "less-loader"
+            }
+            ]
         }
       ]
     }

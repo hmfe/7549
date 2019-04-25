@@ -3,7 +3,7 @@
  * @author andre@orefjard.com (André Orefjärd)
  */
 
-import './result-item.css';
+import './result-item.less';
 
 const ResultItem = (props, index) =>
     `<li class="result-item result-item-${index}" data-index="${index}" data-symbol="${props.symbol}" role="presentation">

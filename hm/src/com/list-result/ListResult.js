@@ -3,7 +3,7 @@
  * @author andre@orefjard.com (André Orefjärd)
  */
 
-import './list-result.css';
+import './list-result.less';
 import ResultItem from './result-item/ResultItem.js';
 
 const ListResult = (props, index) =>

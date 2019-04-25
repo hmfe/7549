@@ -3,7 +3,7 @@
  * @author andre@orefjard.com (André Orefjärd)
  */
 
-import './search-box.css';
+import './search-box.less';
 import HMComponent from '../components/HMComponent.js';
 import {store} from '../store/Store.js';
 import {actions} from '../store/Actions.js';

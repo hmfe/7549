@@ -3,7 +3,7 @@
  * @author andre@orefjard.com (André Orefjärd)
  */
 
-import './search-history.css';
+import './search-history.less';
 import HMComponent from '../components/HMComponent.js';
 import {store} from '../store/Store.js';
 import {actions} from '../store/Actions.js';

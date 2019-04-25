@@ -3,7 +3,7 @@
  * @author andre@orefjard.com (André Orefjärd)
  */
 
-import './history-item.css';
+import './history-item.less';
 
 const HistoryItem = (props, index, displayDeleteBtn) =>
     `<li class="history-item history-item-${index}" data-index="${index}" role="presentation">

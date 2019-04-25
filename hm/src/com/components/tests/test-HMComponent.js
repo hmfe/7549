@@ -5,7 +5,6 @@
 
 import 'jsdom-global/register'
 import 'chai/register-should';
-import sinon from 'sinon';
 import HMComponent from '../HMComponent.js';
 import {utils} from '../../utils/Utils.js';
 
