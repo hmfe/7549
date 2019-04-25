@@ -1,7 +1,7 @@
 Search App
 
 A search app for stock tickers using the public api https://www.alphavantage.co/documentation/#symbolsearch. The App can
-be used as a standalone or be easily integrated as a component. I decided to keep it simple and slim thus only used a few 3rd party
+be used as standalone or be integrated as a component. With this in mind I decided to keep it simple and slim thus only used a few 3rd party
 frameworks - no react/vue/jquery or similar. However parts of the solution has sprinkles of React/Marionette/Redux,
 basically I used concepts and ideas I enjoy working with.
 

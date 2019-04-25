@@ -84,7 +84,20 @@ class SearchBox extends HMComponent {
         return super.render(
             `<div class="search-box">
                 <form>
-                    <input type="text" name="q" required class="search-field ${state.selectedItem ? 'rounded-corners' : (resultList.length ? 'rounded-top-corners' : 'rounded-corners')}" placeholder="Search for a ticker" value="${currentKeyword}" autocomplete="off" spellcheck="false" minlength="1" maxlength="100" data-autocomplete-disabled="false" aria-label="Search ticker"/>
+                    <input 
+                        type="text" 
+                        name="q" 
+                        required 
+                        class="search-field ${state.selectedItem ? 'rounded-corners' : (resultList.length ? 'rounded-top-corners' : 'rounded-corners')}" 
+                        placeholder="Search for a ticker" 
+                        value="${currentKeyword}" 
+                        autocomplete="off" 
+                        spellcheck="false" 
+                        minlength="1" 
+                        maxlength="100" 
+                        data-autocomplete-disabled="false" 
+                        aria-label="Search ticker"
+                    />
                     <button class="reset-search-btn" type="reset" aria-label="reset search"></button>                
                     ${ListResult({list: resultList, class: 'search-suggestions', selectedItem: state.selectedItem})}
                 </form>
