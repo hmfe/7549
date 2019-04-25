@@ -21,13 +21,13 @@ describe('com.app', function() {
                 setItem: () => {}
             };
             document.body.innerHTML = '<div class="app"></div>';
-            sut = new App('.app');
         });
         afterEach(function() {
             sut = global.localStorage = global.DOMParser = null;
         });
 
         it('should render App', function() {
+            sut = new App('.app');
             const expected = `<section class="comp-search-box"><div class="search-box"><form><input type="text" name="q" required="" class="search-field rounded-corners" placeholder="Search for a ticker" value="" autocomplete="off" spellcheck="false" minlength="1" maxlength="100" data-autocomplete-disabled="false" aria-label="Search ticker"><button class="reset-search-btn" type="reset" aria-label="reset search"></button></form><div class="comp-search-history"></div></div></section>`;
             (utils.trim(sut.view.innerHTML)).should.equal(utils.trim(expected));
         });

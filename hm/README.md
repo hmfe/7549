@@ -5,7 +5,7 @@ be used as a standalone or be easily integrated as a component. I decided to kee
 frameworks - no react/vue/jquery or similar. However parts of the solution has sprinkles of React/Marionette/Redux,
 basically I used concepts and ideas I enjoy working with.
 
- I very much enjoyed the task (and had a lot of fun fiddling around with it :smile:).
+I very much enjoyed the task (and had a lot of fun fiddling around with it :smile:).
 
 
 The app can be created in the following way:

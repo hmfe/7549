@@ -1,4 +1,4 @@
-.search-suggestions {
+.list-result.search-suggestions {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     background-color: white;
     padding: 10px;
@@ -11,7 +11,7 @@
     height: 180px;
 }
 
-.list-box {
+.list-result .list-box {
     list-style: none;
     padding: 0;
     margin: 0;

@@ -1,16 +1,16 @@
-.search-history-header {
+.search-history .search-history-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     padding: 10px 0;
 }
-.clear-history-btn,
-a:visited,
-a:active {
+.search-history .clear-history-btn,
+.search-history a:visited,
+.search-history a:active {
     color: #000;
 }
 
-a:hover {
+.search-history a:hover {
     color: #737272;
 }

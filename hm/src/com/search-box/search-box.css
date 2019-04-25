@@ -1,17 +1,17 @@
-.search-field, .reset-search-btn {
+.search-box .search-field, .search-box .reset-search-btn {
     position: relative;
     padding: 10px;
 }
-.search-field {
+.search-box .search-field {
     width: 80%;
     border: 1px solid #ccc;
     outline: none;
 }
-.search-field:focus {
+.search-box .search-field:focus {
     border: 1px solid #dadada;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
 }
-.reset-search-btn {
+.search-box .reset-search-btn {
     border:1px solid transparent;
     background-color: transparent;
     display: inline-block;
@@ -19,7 +19,7 @@
     outline: 0;
     cursor: pointer;
 }
-.reset-search-btn:after {
+.search-box .reset-search-btn:after {
     content: "\00d7";
     position: absolute;
     z-index: 1;
@@ -30,13 +30,13 @@
     cursor: pointer;
     line-height: 15px;
 }
-.search-field:not(:valid) ~ .reset-search-btn {
+.search-box .search-field:not(:valid) ~ .search-box .reset-search-btn {
     display: none;
 }
-.rounded-top-corners {
+.search-box .rounded-top-corners {
     border-radius: 5px 5px 0 0;
 }
-.rounded-corners {
+.search-box .rounded-corners {
     border-radius: 5px;
 }
 
