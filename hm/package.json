@@ -1,7 +1,7 @@
 {
-    "name": "webpack-hm-search",
+    "name": "webpack-ticker-search",
     "version": "1.0.0",
-    "description": "Search app for HM",
+    "description": "Search app for stock tickers",
     "private": true,
     "main": "index.js",
     "scripts": {

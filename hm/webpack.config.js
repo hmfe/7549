@@ -11,8 +11,8 @@ console.log('dev build = '+ devBuild);
 module.exports = (env) => {
   !devBuild && pluginList.push(new MinifyPlugin());
   pluginList.push(new GenerateHtmlPlugin({
-    title: 'HM - search app',
-    description: 'Test search app for HM',
+    title: 'Ticker - search app',
+    description: 'Test stock ticker search app',
     template: './src/index.html',
     filename: './index.html',
     hash: !devBuild,
